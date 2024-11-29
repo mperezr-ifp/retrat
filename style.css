@@ -1,0 +1,220 @@
+  .cabeza {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  .cabeza div {
+    position: absolute;
+  }
+  
+  .cara {
+    width: 36%;
+    height: 45%;
+    background: #fca;
+    border-radius: 100% 100% / 20% 20% 120% 120%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .frente {
+    width: 36%;
+    height: 8%;
+    border-radius: 50%;
+    background: #fca;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cuello {
+    width: 15%;
+    height: 25%;
+    background: rgb(255, 193, 152);
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 80mm;
+  }
+  
+  .oreja {
+    width: 4%;
+    height: 13%;
+    border-radius: 90% 100% 70% 100% / 70% 100%;
+    background: rgb(253, 202, 167);
+    transform: rotate(-10deg);
+    top: 28%;
+    left: 29%;
+  }
+
+  .oreja + .oreja {
+    transform: rotate(10deg);
+    left: auto;
+    right: 29%;
+}
+  
+  .oreja::after {
+    content: "";
+    width: 10mm;
+    height: 10mm;
+    border: 1mm solid rgba(80, 0, 0, 0.15);
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 2%;
+  }
+
+  .boca {
+  
+  }
+
+  .nariz {
+    width: 16%;
+    height: 30%;
+    background:rgba(80, 0, 0, 0.15);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  
+  
+  .ojo {
+    width: 30%;
+    height: 13%;
+    background: #fff;
+    border-radius: 100% / 90%;
+    top: 33%;
+    left: 9%;
+    box-shadow: inset 0 4vmin 0 -3vmin rgba(0, 0, 0, 0.1), inset 0 4vmin 0 -3vmin var(--skin-color), 0 -3vmin 3vmin -1vmin rgba(0, 0, 0, 0.05); /* inset 0 -1vmin 0 -0.5vmin var(--skin-color) */
+}
+  
+  .ojo + .ojo {
+    left: 61%;
+  }
+  
+  .pupila {
+    width: 18%;
+    height: 20%;
+    background: rgb(0, 0, 0);
+    border-radius: 60% 60% 60% 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 0 0 0 4mm #644e08;
+  }
+  
+  .brillo {
+    width: 3mm;
+    height: 3mm;
+    background: white;
+    border-radius: 50%;
+    top: 25%;
+    left: 40%;
+  }
+  
+  .cejas {
+    width: 40%;
+    height: 2%;
+    top: 27%;
+    right: 4%;
+    border-radius: 100% 90% 100% 40% / 70% 100% 90% 100%;
+    background: #b88b5c;
+    transform: rotate(5deg);
+  }
+  
+  .cejas + .cejas {
+    transform: rotate(-5deg);
+    left: 4%;
+    right: auto;
+  }
+  
+  .pelo1 {
+    width: 50%;
+    height: 75%;
+    border-radius: 90% 90% 30% 30% / 100%;
+    background: rgb(28, 27, 27);
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: inset 0 0 0 10vmin rgba(0, 0, 0, 0.075);
+  }
+  
+.frente {
+  background: rgb(28, 27, 27);
+  top: 18%;
+  width: 37%;
+  height: 102px;
+  border-radius: 0%;
+}
+
+.flequi{
+  width: 150px;
+  height: 50px;
+
+  ackground: repeating-linear-gradient(to right, black 0%, transparent 5%);
+  background: transparent;
+  border-radius: 100px 100px 0 0;
+  transform: rotate(160deg);
+  position: absolute;
+  left: 500px;
+  top: 350px;
+  box-shadow: -10px 0px 0 black;
+}
+
+.gafas{
+  width: 500px;
+  height: 60px;
+  position: absolute;
+  top: 340px;
+  z-index: 250;
+  left: 30%;
+  transform: scale(70%);
+}
+
+.gafas .lenteL, .gafas .lenteR{
+  height: 120px;
+  width: 180px;
+  background-color:  rgba(7, 185, 255, 0.176) ;
+  border: 10px solid black;
+  display: inline-block;
+}
+
+.gafas .lenteL{
+  border-radius: 10px 10px 60px 70px;
+  left: 10px;
+}
+
+.gafas .lenteR{
+  border-radius: 20px 10px 70px 60px;
+  left: -10px;
+}
+
+.gafas .pont{
+  height: 10px;
+  width: 80px;
+  background-color:black;
+  display: inline-block;
+  top: -125px;
+}
+.gafas .patillaL{
+  background-color: black;
+  height: 10px;
+  width: 100px;
+  position: absolute;
+}
+
+.gafas .patillaR{
+  background-color: black;
+  height: 10px;
+  width: 100px;
+  position: absolute;
+  right: 0px;
+}
+
+.nariz {
+
+}
